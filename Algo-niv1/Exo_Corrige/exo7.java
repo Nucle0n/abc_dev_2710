@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO7 : A l'aide de Scanner et Print, créer un questionnaire, "Do you speak english ?", répondre yes ou no, puis retourner le messages suivants 
  * 
  * si FALSE "So learn english !"
@@ -16,6 +16,7 @@ package Corrige;
  * 
  * 
 */
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

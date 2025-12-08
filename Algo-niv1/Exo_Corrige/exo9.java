@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO9 : La suite de l'EXO 8, une fois l'inscription terminé, essayez de vous connecter en donnant l'email et le mot de passe correspondant.
  * 
  * Si l'email ou le mot de passe n'est pas bon, vous affichez "connexion refusée"
@@ -39,7 +39,7 @@ package Corrige;
  * 
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

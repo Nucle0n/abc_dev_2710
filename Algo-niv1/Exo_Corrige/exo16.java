@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO16 : Avec PRINT & SCANNER : 
  * 
  * 
@@ -41,7 +41,7 @@ package Corrige;
  * 
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

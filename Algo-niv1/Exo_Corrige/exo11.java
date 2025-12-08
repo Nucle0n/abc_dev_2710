@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO11 : Avec PRINT & Scanner , vous allez simuler un distributeur de banque :
  * 
  * Vous avez 3000€ sur votre compte, créer un algo qui retire un montant sur votre compte banquaire
@@ -14,7 +14,7 @@ package Corrige;
  * 
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

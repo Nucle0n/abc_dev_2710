@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO6 : A l'aide de Scanner et Print, donnez moi votre prénom et votre âge, pour l'affichage sous la forme d'une phrase dynamique
  * 
  * 
@@ -14,6 +14,7 @@ package Corrige;
  * 
  * 
 */
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO15 : Avec PRINT & SCANNER : Me créer un convertisseur de devise, Euros , Dollars et Livres Sterling
  * 
  * Vous devriez choisir votre devise en entrée et la devise en sortie
@@ -32,6 +32,8 @@ package Corrige;
  * 
  * 
 */
+package Exo_Corrige;
+
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 
     /***--------Donner un nom à votre class -------------------****/

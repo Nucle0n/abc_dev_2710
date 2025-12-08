@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO20 : Avec PRINT & SCANNER : 
  * 
  * Vous allez créer un algo de sondage pour des élections, 
@@ -31,7 +31,7 @@ package Corrige;
  * 
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner;
  

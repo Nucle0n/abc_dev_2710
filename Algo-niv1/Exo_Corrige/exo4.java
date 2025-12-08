@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO4 : A l'aide de Scanner et Print, tester si une valeur(type entier) est divisible par 2   
  * 
  * 
@@ -14,7 +14,7 @@ package Corrige;
  * 
 */
 
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO3 : A l'aide de Scanner et Print, me faire afficher le résultat d'une addition (types entiers) et vérifier si elle est pair ou impaire     
  * 
  * 
@@ -18,7 +18,7 @@ package Corrige;
  * 
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

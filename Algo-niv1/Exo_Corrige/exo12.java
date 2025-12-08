@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO12 : Avec PRINT & Scanner , vous allez me créer un algo 
  * qui applique une réduction (en pourcentage %) sur un prix (en décimal) donnée :
  * 
@@ -20,6 +20,7 @@ package Corrige;
  * 
  * 
 */
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

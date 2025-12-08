@@ -13,3 +13,24 @@
  * 
  * 
 */
+import java.util.Scanner;
+public class exo6 {
+public static void main(String[] args)
+{
+    // Définition des variables
+    Scanner sc = new Scanner(System.in);
+    String prenom;
+    int age;
+
+    // Entrée des valeurs pour prenom et pour age
+    System.out.print("Entrez votre prénom : ");
+    prenom = sc.nextLine();
+    System.out.print("Entrez votre age : ");
+    age = sc.nextInt();
+
+    // Affichage de la phrase dynamique
+    System.out.println("Je m'appelle " + prenom + ", j'ai " + age + " ans.");
+
+    sc.close();
+}
+}

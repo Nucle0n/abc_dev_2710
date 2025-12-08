@@ -1,4 +1,3 @@
-package Corrige;
 /* EXO1 : A l'aide de Scanner et Print, me faire afficher le résultat d'une addition de deux entiers        
  * 
  * 
@@ -15,7 +14,7 @@ package Corrige;
  * 
 */
 
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

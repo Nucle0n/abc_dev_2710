@@ -17,12 +17,10 @@
  * 
  * 
 */
-
-package Exercices;
 import java.util.Scanner;
 public class exo3 {
-    public static void main(String[] args){
-    
+    public static void main(String[] args)
+    {    
     // Définition des variables
     Scanner sc = new Scanner(System.in);
     int a, b, resultat;
@@ -39,9 +37,13 @@ public class exo3 {
     System.out.println("Resultat = " + resultat);
 
     // Vérification si le résultat est paire ou impaire
-    if(resultat % 2 == 0){
+    if(resultat % 2 == 0)
+    {
         System.out.println("Resultat est paire");
-    } else {
+    }
+
+    else
+    {
         System.out.println("Resultat est impaire");
     }
 

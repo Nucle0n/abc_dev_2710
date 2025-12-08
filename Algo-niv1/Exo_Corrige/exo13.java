@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO13 : Avec PRINT & SCANNER : Convertir du centimètre (Entier) au mètre (Double)
  * 
  * **********************AFFICHAGE ATTENDU ****************:
@@ -13,6 +13,7 @@ package Corrige;
  * 
  * 
 */
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

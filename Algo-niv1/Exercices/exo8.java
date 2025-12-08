@@ -27,3 +27,39 @@
  * Merci Eudes KONDA , votre inscription a bien été effectuée, vous recevrez un mail de confirmation à l'adresse : ekonda@arfp.asso.fr
  * 
 */
+
+import java.util.Scanner;  
+public class exo8 {
+public static void main(String[] args)     
+    {
+
+    // Définition des variables
+    Scanner sc = new Scanner(System.in);
+    String prenom, nom, mail, password, pwconfirm;
+
+    // Entrée des valeurs pour prenom, nom, mail et password
+    System.out.print("Entrez votre prénom : ");
+    prenom = sc.nextLine();
+    System.out.print("Entrez votre nom : ");
+    nom = sc.nextLine();
+    System.out.print("Entrer votre adresse mail : ");
+    mail = sc.nextLine();
+    System.out.print("Entrez un mot de passe : ");
+    password = sc.nextLine();
+    System.out.print("Confirmez votre mot de passe : ");
+    pwconfirm = sc.nextLine();
+
+    //Vérification du password
+    if(password.equals(pwconfirm))
+    {
+    System.out.println("merci " + prenom + " " + nom + ", votre inscription a bien été effectuée, vous recevrez un mail de confirmation à l'adresse : " + mail);
+    }
+    else
+    {
+    System.out.println("Les mots de passes ne correspondent pas : inscription annulée");
+    }
+    
+    sc.close();
+
+    }
+}

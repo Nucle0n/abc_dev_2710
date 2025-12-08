@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO17 : Avec PRINT & SCANNER : 
  * 
  * Créer un algo qui calcule les dépenses moyenne (en euros, en France) en carburant d'une voiture en fonction 
@@ -33,7 +33,7 @@ package Corrige;
  * /!\ ATTENTION : Le résultat doit être en décimal 2 chiffres après la virgules
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

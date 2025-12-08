@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO5 : A l'aide de Scanner et Print, créer une équation  A multiplier par B diviser par C (tous types entiers) , récupérer le résultat et vérifier si elle inférieur ou supérieur à 10
  * 
  * 
@@ -12,6 +12,7 @@ package Corrige;
  * equation est superieur
  * 
 */
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 

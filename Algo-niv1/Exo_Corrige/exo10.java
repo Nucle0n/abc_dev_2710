@@ -1,4 +1,4 @@
-package Corrige;
+
 /* EXO10 : Créer un quizz de 5 questions, chaque question à deux réponses au choix VRAI OU FAUX, à chaque fois que vous répondez juste à une question vous gagnez un point
  * 
  * Après avoir répondez à vos 5 questions, vous avez le résultat final sur 5.
@@ -31,7 +31,7 @@ package Corrige;
  * Résultat du QUIZZ, vous avez 5 point(s) / 5
  * 
 */
-
+package Exo_Corrige;
 
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 
