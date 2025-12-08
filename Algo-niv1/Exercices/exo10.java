@@ -55,13 +55,8 @@ public static void main(String[] args)
             System.out.print(erreur);
             reponse = sc.nextLine();    
         }
-        if(reponse.equalsIgnoreCase("V"))
-        {
-            score++;
-            System.out.println(Q2);
-        }
-        else
-            System.out.println(Q2);
+        if(reponse.equalsIgnoreCase("V")) score++;
+        System.out.println(Q2);
     
     // Question 2
     reponse = sc.nextLine();
@@ -70,12 +65,7 @@ public static void main(String[] args)
             System.out.print(erreur);
             reponse = sc.nextLine();    
         }
-        if(reponse.equalsIgnoreCase("F"))
-        {
-            score++;
-            System.out.println(Q3);
-        }
-        else
+        if(reponse.equalsIgnoreCase("F")) score++;
             System.out.println(Q3);
 
     // Question 3
@@ -85,12 +75,7 @@ public static void main(String[] args)
             System.out.print(erreur);
             reponse = sc.nextLine();    
         }
-        if(reponse.equalsIgnoreCase("F"))
-        {
-            score++;
-            System.out.println(Q4);
-        }
-        else
+        if(reponse.equalsIgnoreCase("F")) score++;
             System.out.println(Q4);
 
     // Question 4
@@ -100,12 +85,7 @@ public static void main(String[] args)
             System.out.print(erreur);
             reponse = sc.nextLine();    
         }
-        if(reponse.equalsIgnoreCase("V"))
-        {
-            score++;
-            System.out.println(Q5);
-        }
-        else
+        if(reponse.equalsIgnoreCase("V")) score++;
             System.out.println(Q5);
 
     // Question 5
@@ -115,14 +95,8 @@ public static void main(String[] args)
             System.out.print(erreur);
             reponse = sc.nextLine();    
         }
-        if(reponse.equalsIgnoreCase("V"))
-        {
-            score++;
+        if(reponse.equalsIgnoreCase("V")) score++;
             System.out.println("Résultat du QUIZZ, vous avez " +score+ " / 5 bonnes réponses.");
-        }   
-        else
-            System.out.println("Résultat du QUIZZ, vous avez " +score+ " / 5 bonnes réponses.");
-        
 
     sc.close();
 

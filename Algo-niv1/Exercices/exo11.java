@@ -13,3 +13,28 @@
  * 
  * 
 */
+
+import java.util.Scanner;
+public class exo11 
+{
+    public static void main(String[] arg)
+    {
+        // Définition des variables
+        Scanner sc = new Scanner(System.in);
+        double solde = 3000.0;
+        int mret;
+
+        // accueil utilisateur
+        System.out.println("bonjour, \nvotre solde actuel est : " +solde+ " EUR \ncombien voulez-vous retirer ? ");
+
+        // saisie du montant à retirer
+        mret = sc.nextInt();
+        if (mret > solde) System.out.println("Opération refusée, fond insuffissant !");
+        else
+        {
+            solde = solde - mret;
+            System.out.println("Retrait de " +mret+ " EUR effectué. \nVotre nouveau solde est de : " +solde+ " EUR");
+        }
+        sc.close();
+    }
+}
