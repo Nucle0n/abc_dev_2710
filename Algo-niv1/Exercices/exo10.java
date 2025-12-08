@@ -30,4 +30,101 @@
  * Résultat du QUIZZ, vous avez 5 point(s) / 5
  * 
 */
+import java.util.Scanner;
 
+public class exo10 
+{
+public static void main(String[] args) 
+    {
+    // Définition des variables
+    Scanner sc = new Scanner(System.in);
+    int score = 0;
+    String  Q1 = "L'informatique a besoin des mathématiques ? (V/F)", 
+            Q2 = "L'Algèbre de Boole a été inventé par Steve Jobs ? (V/F)",
+            Q3 = "En numération, la base de 10 va de 0 à 10 ? (V/F)", 
+            Q4 = "Une table de vérité retourne l'expression algébrique (V/F)",
+            Q5 = "Git permet de stocker à distance son travail (V/F)",
+            erreur = "Veuillez répondre par V ou F : ",
+            reponse;
+
+    // Question 1
+    System.out.println(Q1);
+        reponse = sc.nextLine();
+        while (!reponse.equalsIgnoreCase("V") && !reponse.equalsIgnoreCase("F"))    
+        {
+            System.out.print(erreur);
+            reponse = sc.nextLine();    
+        }
+        if(reponse.equalsIgnoreCase("V"))
+        {
+            score++;
+            System.out.println(Q2);
+        }
+        else
+            System.out.println(Q2);
+    
+    // Question 2
+    reponse = sc.nextLine();
+        while (!reponse.equalsIgnoreCase("V") && !reponse.equalsIgnoreCase("F"))    
+        {
+            System.out.print(erreur);
+            reponse = sc.nextLine();    
+        }
+        if(reponse.equalsIgnoreCase("F"))
+        {
+            score++;
+            System.out.println(Q3);
+        }
+        else
+            System.out.println(Q3);
+
+    // Question 3
+    reponse = sc.nextLine();
+        while (!reponse.equalsIgnoreCase("V") && !reponse.equalsIgnoreCase("F"))    
+        {
+            System.out.print(erreur);
+            reponse = sc.nextLine();    
+        }
+        if(reponse.equalsIgnoreCase("F"))
+        {
+            score++;
+            System.out.println(Q4);
+        }
+        else
+            System.out.println(Q4);
+
+    // Question 4
+    reponse = sc.nextLine();
+        while (!reponse.equalsIgnoreCase("V") && !reponse.equalsIgnoreCase("F"))    
+        {
+            System.out.print(erreur);
+            reponse = sc.nextLine();    
+        }
+        if(reponse.equalsIgnoreCase("V"))
+        {
+            score++;
+            System.out.println(Q5);
+        }
+        else
+            System.out.println(Q5);
+
+    // Question 5
+    reponse = sc.nextLine();
+        while (!reponse.equalsIgnoreCase("V") && !reponse.equalsIgnoreCase("F"))    
+        {
+            System.out.print(erreur);
+            reponse = sc.nextLine();    
+        }
+        if(reponse.equalsIgnoreCase("V"))
+        {
+            score++;
+            System.out.println("Résultat du QUIZZ, vous avez " +score+ " / 5 bonnes réponses.");
+        }   
+        else
+            System.out.println("Résultat du QUIZZ, vous avez " +score+ " / 5 bonnes réponses.");
+        
+
+    sc.close();
+
+    }
+}
