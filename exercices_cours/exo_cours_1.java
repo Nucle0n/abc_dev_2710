@@ -1,4 +1,4 @@
-package abc_dev_2710.exercices;
+package abc_dev_2710.exercices_cours;
 
 import java.util.Scanner;
 

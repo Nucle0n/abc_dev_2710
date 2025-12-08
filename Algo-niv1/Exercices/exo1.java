@@ -13,7 +13,7 @@
  * 
  * 
 */
-package Exercicess;
+package Exercices;
 
 import java.util.Scanner;
 
@@ -24,12 +24,13 @@ public class exo1 {
     Scanner sc = new Scanner(System.in);
     int a, b, resultat;
 
+    // Entrée des valeurs pour a et pour b
     System.out.print("a = ");
     a  = sc.nextInt();
-
     System.out.print("b = ");
     b = sc.nextInt();
 
+    // Calcul et affichage du résultat
     resultat = a + b;
     System.out.println("Resultat = a + b");
     System.out.println("Resultat vaut " + resultat);
