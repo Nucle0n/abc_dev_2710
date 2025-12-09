@@ -75,12 +75,12 @@ public class exo15
         while (true) 
         { 
             cdevice = sc.nextLine().toUpperCase();
-            if (cdevice.equals("EUR") || ("USD".equals(cdevice)) || ("GBP".equals(cdevice))) 
+            if ((cdevice.equals("EUR") || ("USD".equals(cdevice)) || ("GBP".equals(cdevice))) && (!(odevice.equals(cdevice))))
                 break;
             else
                 System.out.print("Erreur, veuillez entrer une devise valide (EUR, USD, GBP) : ");
         }
-        //définir le sens de conversion : 
+        // Calcul conversion : 
         if (odevice.equals("EUR") && cdevice.equals("USD"))
         {
             camount = amount*euus;
@@ -111,6 +111,8 @@ public class exo15
             camount = amount*gbus;
             System.out.println(amount+"GBP = "+camount+"USD");
         }
+        else 
+            System.out.println();
 
         sc.close();
 
