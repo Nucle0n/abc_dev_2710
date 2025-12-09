@@ -41,7 +41,6 @@ public class exo15
         Scanner sc = new Scanner(System.in);
         double amount = -1, camount;
         String odevice, cdevice;
-        double eur, usd, gbp;
         double  euus = 1.16,
                 eugb = 0.87,
                 useu = 0.86,
