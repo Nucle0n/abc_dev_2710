@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Algo-niv1/Exercicess",
-        "Algo-niv1/Exercices"
+        "Algo-niv1/Exercices",
+        "exercices_cours"
     ]
 }
