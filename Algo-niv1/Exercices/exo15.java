@@ -31,3 +31,89 @@
  * 
  * 
 */
+import java.util.Scanner; 
+
+public class exo15
+{
+    public static void main(String[] arg)
+    {
+        // Définition des variables :
+        Scanner sc = new Scanner(System.in);
+        double amount = -1, camount;
+        String odevice, cdevice;
+        double eur, usd, gbp;
+        double  euus = 1.16,
+                eugb = 0.87,
+                useu = 0.86,
+                usgb = 0.75,
+                gbeu = 1.14,
+                gbus = 1.33;
+        // Choix de la monnaie en entrée du convertisseur
+        System.out.print("Quel est votre monnaie ? (EUR, USD, GBP) : ");
+        while (true) 
+        { 
+            odevice = sc.nextLine().toUpperCase();
+            if (odevice.equals("EUR") || ("USD".equals(odevice)) || ("GBP".equals(odevice))) 
+                break;
+            else
+                System.out.print("Erreur, entrez une devise valide (EUR, USD, GBP) : ");
+        }
+        // Montant à convertir + vérification validité de l'entrée
+        System.out.print("Entrez le montant que vous voulez convertir : ");
+        while(!(amount >= 0))
+        {
+            while (!(sc.hasNextDouble()))
+            {
+                sc.next();
+                System.out.print("Erreur, entrez un montant valide : ");
+            }
+            amount = sc.nextDouble();
+            if (!(amount >= 0))
+                System.out.print("Erreur, entrez un montant positif : ");
+        }
+        // Choix de la devise de sortie :
+        System.out.print("Vers quelle devise voulez vous effectuer la conversion ? (EUR, USD, GBP) : ");
+        while (true) 
+        { 
+            cdevice = sc.nextLine().toUpperCase();
+            if (cdevice.equals("EUR") || ("USD".equals(cdevice)) || ("GBP".equals(cdevice))) 
+                break;
+            else
+                System.out.print("Erreur, veuillez entrer une devise valide (EUR, USD, GBP) : ");
+        }
+        //définir le sens de conversion : 
+        if (odevice.equals("EUR") && cdevice.equals("USD"))
+        {
+            camount = amount*euus;
+            System.out.println(amount+"EUR = "+camount+"USD");
+        }
+        if (odevice.equals("EUR") && cdevice.equals("GBP"))
+        {
+            camount = amount*eugb;
+            System.out.println(amount+"EUR = "+camount+"GBP");
+        }
+        if (odevice.equals("USD") && cdevice.equals("EUR"))
+        {
+            camount = amount*useu;
+            System.out.println(amount+"USD = "+camount+"EUR");
+        }
+        if (odevice.equals("USD") && cdevice.equals("GBP"))
+        {
+            camount = amount*usgb;
+            System.out.println(amount+"USD = "+camount+"GBP");
+        }
+        if (odevice.equals("GBP") && cdevice.equals("EUR"))
+        {
+            camount = amount*gbeu;
+            System.out.println(amount+"GBP = "+camount+"EUR");
+        }
+        if (odevice.equals("GBP") && cdevice.equals("USD"))
+        {
+            camount = amount*gbus;
+            System.out.println(amount+"GBP = "+camount+"USD");
+        }
+
+        sc.close();
+
+    }
+}
