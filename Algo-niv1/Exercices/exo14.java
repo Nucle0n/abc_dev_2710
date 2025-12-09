@@ -14,3 +14,30 @@
  * 
  * 
 */
+import java.util.Scanner;
+public class exo14  
+{
+    public static void main(String[] arg)
+    {
+        // Définition des variables
+        Scanner sc = new Scanner(System.in);
+        boolean A, B, C, S;
+    
+        // Saisie des valeurs A, B et C
+        System.out.print("Donner une valeur A (TRUE/FALSE) : ");
+        A = sc.nextBoolean();
+        System.out.print("Donner une valeur B (TRUE/FALSE) : ");
+        B = sc.nextBoolean();
+        System.out.print("Donner une valeur C (TRUE/FALSE) : ");
+        C = sc.nextBoolean();
+
+        // Calcul de l'expression A OU B ET NON C
+        S = A || B && !C;
+
+        // Affichage du résultat
+        System.out.println("Résultat : " + S);
+
+        sc.close();
+    }
+
+}

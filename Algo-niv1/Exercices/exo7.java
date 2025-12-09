@@ -29,11 +29,13 @@ public class exo7 {
     while (true)
     {
         input = sc.nextLine().trim();
-        if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
+        if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) 
+        {
             reponse = true;
             break;
         }
-        if (input.equalsIgnoreCase("n") || input.equalsIgnoreCase("no")) {
+        if (input.equalsIgnoreCase("n") || input.equalsIgnoreCase("no")) 
+        {
             reponse = false;
             break;
         }
