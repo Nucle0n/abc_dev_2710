@@ -67,6 +67,7 @@ public class exo15
                 System.out.print("Erreur, entrez un montant valide : ");
             }
             amount = sc.nextDouble();
+            sc.nextLine(); //pourquoi ai-jes besoin de cette ligne ???
             if (!(amount >= 0))
                 System.out.print("Erreur, entrez un montant positif : ");
         }
@@ -78,38 +79,38 @@ public class exo15
             if ((cdevice.equals("EUR") || ("USD".equals(cdevice)) || ("GBP".equals(cdevice))) && (!(odevice.equals(cdevice))))
                 break;
             else
-                System.out.print("Erreur, veuillez entrer une devise valide (EUR, USD, GBP) : ");
+                System.out.print("Erreur, veuillez entrer une devise valide (EUR, USD, GBP) : (pas la meme que celle donnée initialement.)");
         }
         // Calcul conversion : 
         if (odevice.equals("EUR") && cdevice.equals("USD"))
         {
             camount = amount*euus;
-            System.out.println(amount+"EUR = "+camount+"USD");
+            System.out.println(amount+" EUR = "+camount+" USD");
         }
         if (odevice.equals("EUR") && cdevice.equals("GBP"))
         {
             camount = amount*eugb;
-            System.out.println(amount+"EUR = "+camount+"GBP");
+            System.out.println(amount+" EUR = "+camount+" GBP");
         }
         if (odevice.equals("USD") && cdevice.equals("EUR"))
         {
             camount = amount*useu;
-            System.out.println(amount+"USD = "+camount+"EUR");
+            System.out.println(amount+" USD = "+camount+" EUR");
         }
         if (odevice.equals("USD") && cdevice.equals("GBP"))
         {
             camount = amount*usgb;
-            System.out.println(amount+"USD = "+camount+"GBP");
+            System.out.println(amount+" USD = "+camount+" GBP");
         }
         if (odevice.equals("GBP") && cdevice.equals("EUR"))
         {
             camount = amount*gbeu;
-            System.out.println(amount+"GBP = "+camount+"EUR");
+            System.out.println(amount+" GBP = "+camount+" EUR");
         }
         if (odevice.equals("GBP") && cdevice.equals("USD"))
         {
             camount = amount*gbus;
-            System.out.println(amount+"GBP = "+camount+"USD");
+            System.out.println(amount+" GBP = "+camount+" USD");
         }
         else 
             System.out.println();

@@ -17,7 +17,7 @@
 import java.util.Scanner;
 public class exo11 
 {
-    public static void main(String[] arg)
+    public static void main(String[] args)
     {
         // Définition des variables
         Scanner sc = new Scanner(System.in);
