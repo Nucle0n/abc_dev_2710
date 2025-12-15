@@ -2,7 +2,7 @@ package exoCoursFranck;
 
 import java.util.Scanner;
 
-public class Ex2_2 
+public class Ex1_2 
 {
    public static void main(String[] args)
    {
