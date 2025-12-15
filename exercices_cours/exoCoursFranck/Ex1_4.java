@@ -24,8 +24,8 @@ public class Ex1_4
         ic = S*Math.pow((1+i/100), N);
 
         //Affichage du résultat
-        System.out.println("Intérêt simple : " +is);
-        System.out.println("Intérêts composé : "+ic);
+        System.out.printf("Intérêt simple : %.2f%n",is);
+        System.out.printf("Intérêts composé : %.2f",ic);
         
         sc.close();
 
