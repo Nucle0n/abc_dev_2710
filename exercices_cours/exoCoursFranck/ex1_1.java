@@ -1,3 +1,4 @@
+package exoCoursFranck;
 import java.util.Scanner;
 
 public class ex1_1 
@@ -19,8 +20,7 @@ public class ex1_1
         result = (a + b) /(double) 2;
 
         //Affichage du résultat
-        System.out.printf("la moyenne de "+ a + " et " + b + " est : %.2f"+ result);
-
+        System.out.printf("la moyenne de %d et  %d est : %.2f",a,b,result);
         sc.close();
     }
 }
