@@ -37,4 +37,13 @@
 
  * 
 */
+import java.util.Scanner;
+public static class exo18 
+{
+    public static void main(String[] args)
+    {
+        
+    }
 
+    
+}
