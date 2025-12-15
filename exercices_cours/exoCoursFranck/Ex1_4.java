@@ -20,14 +20,14 @@ public class Ex1_4
         N = sc.nextInt();
 
         //calculs
-        is = S*(1+N*i);
-        ic = S*Math.pow((1+i), N);
+        is = S*(1+N*i/100);
+        ic = S*Math.pow((1+i/100), N);
 
         //Affichage du résultat
-        System.out.printf("Avec un solde de départ de %.2f , un taux d'intéret de %.2f % après %d années : ",S,i,N) ;
         System.out.println("Intérêt simple : " +is);
         System.out.println("Intérêts composé : "+ic);
-
+        
         sc.close();
+
     }    
 }
