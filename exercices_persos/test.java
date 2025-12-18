@@ -1,11 +1,9 @@
-package abc_dev_2710.exercices_persos;
-
-import cours.techniques.scanner;
+import java.util.Scanner;
 
 public class test {
 public static void main(String[] args) {    
     int note;
-    scanner sc = new scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     }
 }
