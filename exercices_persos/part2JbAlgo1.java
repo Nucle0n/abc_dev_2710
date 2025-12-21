@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class part2JbAlgo {
+public class part2JbAlgo1 {
     public static void main(String[] args) {
         //declaration des variables : 
         double a,b; //le type n'étant pas précisé, je les déclare comme double pour cibler tous les cas possibles
