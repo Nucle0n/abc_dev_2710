@@ -10,11 +10,25 @@
 
 package exoCoursFranck;
 
+import java.util.Scanner;
+
 public class Ex3_4 
 {
     public static void main(String[] args) 
     {
+        String inUser; //Contiendra la chaine de caractères entrée par User
+        Scanner sc = new Scanner(System.in);
         
+        System.out.println("Entrez une phrase ou un mot, terminez par un \".\" :");
+        inUser = sc.nextLine();
+
+        // sc.nextLine().charAt(0);
+
+        String[] uStrings = new String[inUser];
+
+
+        sc.close();
+
     }
     
 }
