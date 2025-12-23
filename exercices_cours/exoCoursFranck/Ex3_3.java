@@ -1,7 +1,9 @@
 //rechercher un nombre entier dans un tableau (trié par ordre croissant)
 package exoCoursFranck;
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Ex3_3 
@@ -9,26 +11,29 @@ public class Ex3_3
     public static void main(String[] args) 
     {
         
-        int     nbcases; //Nombre de celulles dans le tableau
+        int     nbcell; //Nombre de celulles dans le tableau
         int     nbU; //Nombre choisi par l'utilisateur
-        int     position    = 0;
-        boolean trouve  = false;
+        // int     position    = 0;
+        int     numOcc      = 0; //
+        boolean trouve      = false;
 
         Scanner sc = new Scanner(System.in);
         Random rng = new Random();
 
+
         System.out.print("Définissez la taille du tableau : ");
-        nbcases = sc.nextInt();
-        int monTab[] = new int[nbcases]; //creation d'un tableau, une dimension, N cellules
-                
+        nbcell = sc.nextInt();
+        Integer monTab[] = new Integer[nbcell]; //creation d'un tableau, une dimension, N cellules (integer pour pouvoir utiliser la méthode reverseOrder de la class Comparator)
+        int[] occurence = new int[nbcell];
+
         for (int i = 0 ; i < monTab.length; i++)
         {
-            monTab[i] = rng.nextInt(0,101);
+            monTab[i] = rng.nextInt(101);
         }
 
-        Arrays.sort(monTab);
+        Arrays.sort(monTab, Comparator.reverseOrder()); //classe les valeurs contenues dans le tableau dans l'ordre croissant (classe Comparator, méthode reverseOrder, pour classer en décroissant)
         System.out.print("[");
-        for (int elements : monTab)
+        for (long elements : monTab)
         {
             System.out.print(elements + " ");
         }
@@ -42,8 +47,8 @@ public class Ex3_3
             if (monTab[i]==nbU)
             {
                 trouve=true;
-                position = i;
-                break;
+                occurence[numOcc] = i+1; // l'indice + 1, poru la position
+                numOcc++;
             }
         }
 
@@ -51,11 +56,16 @@ public class Ex3_3
         {
             System.out.println("Le nombre saisie n'est pas dans le tableau");
         }
-        else System.out.println("Le nombre se trouve dans le tableau à la position : "+(position+1));
+        else 
+            System.out.println("Le nombre se trouve dans le tableau : ");
+            for (int position : occurence)
+            {
+                if (position != 0)
+                    System.out.print(position + " ");
+                else System.out.println();
+            }
 
-        sc.close(); 
-
-
+        sc.close();
 
     }
 }
