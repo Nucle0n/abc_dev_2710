@@ -70,6 +70,7 @@ public class Ex3_4
         {
             System.out.println("Veuillez saisir une phrase terminée par un point !");
             chaineString    = sc.nextLine();
+            chaineString = chaineString.trim();
             depart          = chaineString.length()-1;
             souString       = chaineString.substring(depart, chaineString.length());
 
@@ -85,59 +86,62 @@ public class Ex3_4
         }
         while (trouvePoint == false);
         
-        chaineString    = chaineString.replace(" ","");
-        occurence       = new int[chaineString.length()];
-        // chaineString = chaineString.replace("é","e")
-
-        System.out.print("Veuillez saisir une lettre qui sera peut-être dans la phrase : ");
-        lettre = sc.nextLine().charAt(0);
-
-        char[]  tabPhrase = new char[chaineString.length()];
-
-        for (int i = 0; i < chaineString.length(); i++) 
+        if (chaineString.length()==1)
         {
-            tabPhrase[i] = chaineString.charAt(i);
-        }
-        
-        System.out.print("[ ");
-        for (char c : tabPhrase)
-        {
-            System.out.print(c+ " ");
-        }
-        System.out.print("]\n");
-
-        for (int i = 0; i < tabPhrase.length; i++) 
-        {
-            if (tabPhrase[i] == lettre) 
-            {
-                occurence[position] = i+1;
-                trouveLettre = true;
-                position++;                
-            }
-        }
-        
-        if (trouveLettre == false)
-        {
-            System.out.println("La lettre n'est pas présente dans la phrase.\n");
+            System.out.println("La chaîne de caractères est vide !");
         }
         else
         {
-            System.out.println(" la lettre est présente dans le tableau de char aux positions suivantes :");
-            for (int value :  occurence) 
+            chaineString    = chaineString.replace(" ","");
+            occurence       = new int[chaineString.length()];
+            // chaineString = chaineString.replace("é","e")
+
+            System.out.print("Veuillez saisir une lettre qui sera peut-être dans la phrase : ");
+            lettre = sc.nextLine().charAt(0);
+
+            char[]  tabPhrase = new char[chaineString.length()];
+
+            for (int i = 0; i < chaineString.length(); i++) 
             {
-                if(value != 0)
-                {
-                    System.out.print(value+ " ");
-                }    
+                tabPhrase[i] = chaineString.charAt(i);
             }
-            System.err.println(""); //retour à la ligne pour terminal UNIX  
+            
+            System.out.print("[ ");
+            for (char c : tabPhrase)
+            {
+                System.out.print(c+ " ");
+            }
+            System.out.print("]\n");
+
+            for (int i = 0; i < tabPhrase.length; i++) 
+            {
+                if (tabPhrase[i] == lettre) 
+                {
+                    occurence[position] = i+1;
+                    trouveLettre = true;
+                    position++;                
+                }
+            }
+            
+            if (trouveLettre == false)
+            {
+                System.out.println("La lettre n'est pas présente dans la phrase.\n");
+            }
+            else
+            {
+                System.out.println(" la lettre est présente dans le tableau de char aux positions suivantes :");
+                for (int value :  occurence) 
+                {
+                    if(value != 0)
+                    {
+                        System.out.print(value+ " ");
+                    }    
+                }
+                System.err.println(""); //retour à la ligne pour terminal UNIX  
+            }
+
+            sc.close();
         }
-
-        sc.close();    
-        
-
     }
-
-    
 }
 
