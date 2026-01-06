@@ -1,8 +1,8 @@
 package exoCoursFranck;
 import java.util.Scanner;
-public class Ex3_4a 
+public class Ex3_4a
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         String inUser; //Contiendra la chaine de caractères entrée par User
         String pointVerif;
@@ -41,12 +41,11 @@ public class Ex3_4a
         for (int i = 0; i < inUser.length(); i++)//Boucle for, pour parcourir chaque caractère de la chaîne inUser
         {
             if (car == inUser.charAt(i))//dans le cas ou le caractère recherche (contenu dans car) correspond au caractère présent à l'indice i de la chaîne inUser
-                carCount += 1; //on ajoute 1 au compteur            
+                carCount += 1; //on ajoute 1 au compteur
         }
         System.out.println("Le caractère "+car+" apparait "+carCount+" dans la chaîne."); //On affiche le résultat, combien de fois le caractère apparraît dans la chaine
 
         sc.close();
 
-    }    
+    }
 }
-
