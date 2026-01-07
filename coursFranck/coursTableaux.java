@@ -4,6 +4,7 @@ public class coursTableaux
 {
     public static void main(String[] args) 
     {
+        int nbcase;
         int monTableau[] = new int[10];
                 
     }

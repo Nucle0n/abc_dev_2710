@@ -1,3 +1,4 @@
+package exocoursfranck;
 // Exercice 2.6 : Ma bicyclette
 
 // Réalisez l’algorithme et le programme correspondant au texte ci-dessous :
@@ -26,6 +27,7 @@ public class Exp2_2_6
                 livrePossede,
                 livreDispo;
         Scanner sc = new Scanner(System.in);
+        Random rng = new Random();
 
         System.out.print("Fait-il beau demain ? (true/false) : ");
         beauTemps = sc.nextBoolean();
@@ -33,7 +35,6 @@ public class Exp2_2_6
         if (beauTemps)
         {
             System.out.println("je vais voir dans quel état est mon vélo...");
-            Random rng = new Random();
             veloOK = rng.nextBoolean();
             if (veloOK)
             {
