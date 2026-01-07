@@ -1,4 +1,4 @@
-package exoCoursFranck;
+package exocoursfranck;
 
 import java.util.Random;
 import java.util.Scanner;

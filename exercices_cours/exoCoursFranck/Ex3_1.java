@@ -1,4 +1,4 @@
-package exoCoursFranck;
+package exocoursfranck;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -21,25 +21,25 @@ public class Ex3_1 {
             
             if (Nu > min && Nu < max)
             {
-                if (Nu > No) 
+                if (Nu > No)
                 {
                     max = Nu;
                     essai++;
                 System.out.println("c'est votre essai numero "+ essai+"\n");
-                } else if (Nu < No) 
+                } else if (Nu < No)
                 {
                     min = Nu;
                     essai++;
-                  System.out.println("c'est votre essai numero "+ essai+"\n");
-                } else 
-                  {  essai++;
-                         System.out.println("c'est votre essai numero "+ essai+"\n");}
+                    System.out.println("c'est votre essai numero "+ essai+"\n");
+                } else
+                {  essai++;
+                System.out.println("c'est votre essai numero "+ essai+"\n");}
             }
             else
             {
                 System.out.println("Vous êtes en dehors de l'intervalle");
                 essai++;
-                      System.out.println("c'est votre essai numero "+ essai+"\n");
+                System.out.println("c'est votre essai numero "+ essai+"\n");
             }
             
 

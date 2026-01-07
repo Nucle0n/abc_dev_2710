@@ -8,7 +8,7 @@
 //     La lettre n'est pas présente
 //     La lettre est présente une ou plusieurs fois
 
-package exoCoursFranck;
+package exocoursfranck;
 
 import java.util.Scanner;
 

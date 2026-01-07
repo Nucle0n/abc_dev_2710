@@ -1,4 +1,4 @@
-package exoCoursFranck;
+package exocoursfranck;
 import java.util.Scanner;
 
 public class ex1_1 

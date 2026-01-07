@@ -1,14 +1,14 @@
-package exoCoursFranck;
+package exocoursfranck;
 import java.util.Scanner;
 public class Ex3_4a
 {
     public static void main(String[] args)
     {
-        String inUser; //Contiendra la chaine de caractères entrée par User
-        String pointVerif;
-        char car;
-        int carCount = 0,
-            lastChar;
+        String  inUser; //Contiendra la chaine de caractères entrée par User
+        String  pointVerif;
+        char    car;
+        int     carCount = 0,
+                lastChar;
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Entrez une phrase ou un mot. ");

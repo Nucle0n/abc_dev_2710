@@ -1,9 +1,9 @@
 //rechercher un nombre entier dans un tableau (trié par ordre croissant)
-package exoCoursFranck;
-import java.util.Scanner;
+package exocoursfranck;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Ex3_3 
 {

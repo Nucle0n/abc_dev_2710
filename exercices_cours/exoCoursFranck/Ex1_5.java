@@ -1,7 +1,7 @@
-package exoCoursFranck;
+package exocoursfranck;
 import java.util.Scanner;
 
-public class Ex1_5 
+public class Ex1_5
 {
     public static void main(String[] args)
     {
@@ -12,7 +12,7 @@ public class Ex1_5
         //Entrées des valeurs
         System.out.print("Entrez une valeur pour A : ");
         a = sc.nextInt();
-       
+        
         System.out.print("Entrez une valeurpour B : ");
         b = sc.nextInt();
         
@@ -24,5 +24,5 @@ public class Ex1_5
         System.out.println("Désormais A = "+a+" et B = "+b);
 
         sc.close();
-    }    
+    }
 }

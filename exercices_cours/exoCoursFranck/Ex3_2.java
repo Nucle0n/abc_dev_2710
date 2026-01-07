@@ -3,7 +3,7 @@
 // Soit S un nombre entier représentant la somme dont il disposait au départ (S > 1 euro).
 // Représenter l’algorithme permettant de trouver le nombre de magasins dans lesquels il a acheté.
 
-package exoCoursFranck;
+package exocoursfranck;
 import java.util.Scanner;
 public class Ex3_2 
 {

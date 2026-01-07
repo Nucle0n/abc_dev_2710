@@ -1,4 +1,4 @@
-package exoCoursFranck;
+package exocoursfranck;
 
 import java.util.Arrays;
 import java.util.Scanner;
