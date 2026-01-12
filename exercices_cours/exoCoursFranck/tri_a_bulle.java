@@ -50,7 +50,7 @@ public class tri_a_bulle
         {
             permut = false;
             passage ++;
-            for (enCours = 0; enCours < 20 - passage; enCours++)
+            for (enCours = 0; enCours < _tableau.length - passage; enCours++)
             {
                 if (_tableau[enCours] > _tableau[enCours+1])
                 {
