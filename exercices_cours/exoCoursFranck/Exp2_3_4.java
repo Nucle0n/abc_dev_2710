@@ -29,11 +29,7 @@ import java.util.Scanner;
 
 public class Exp2_3_4{
     public static void main(String[] args) {
-        int enCours,
-            plusPetit,
-            temp,
-            n,
-            j;
+        int n;
         
         Scanner sc = new Scanner(System.in);
 
@@ -42,26 +38,34 @@ public class Exp2_3_4{
 
         int[] monTab = new int[n];
         Exp2_3_4.remplirTableau(monTab);
-        System.out.print("Voici le tableau trié :");
+        System.out.print("Voici le tableau :");
+        Exp2_3_4.afficherTableau(monTab);
+        Exp2_3_4.trierTableau(monTab);
+        System.out.print("\nVoici le tableau trié :");
         Exp2_3_4.afficherTableau(monTab);
 
-        //Tri par sélection
-        for (enCours=0; enCours < monTab.length-1; enCours++){
-            plusPetit = monTab[enCours];
-            j = enCours;
-            for (int i = enCours+1; i < monTab.length; i++){
-                if (monTab[i] < plusPetit){
-                    plusPetit = monTab[i];
-                    j = i;
+        sc.close();
+    }
+
+    //Fonction de trie
+    public static void  trierTableau(int[] _tableau)
+    {
+        int enCours,
+            plusPetit,
+            temp,
+            j;
+        for (enCours = 0; enCours < _tableau.length - 1; enCours++) {
+            plusPetit = enCours;
+            for (j = enCours + 1; j < _tableau.length; j++) {
+                if (_tableau[j] < _tableau[plusPetit]) {
+                    plusPetit = j;
                 }
             }
-            //Permutation des éléments
-            temp = monTab[enCours];
-            monTab[enCours] = monTab[j];
-            monTab[j] = temp;
+            // Permutation des éléments
+            temp = _tableau[enCours];
+            _tableau[enCours] = _tableau[plusPetit];
+            _tableau[plusPetit] = temp;
         }
-
-        sc.close();
     }
 
     //Fonction/méthode pour remplir le tableau
@@ -84,7 +88,7 @@ public class Exp2_3_4{
 }
 
 
-// Corrigé IA :
+// Corrigé par IA :
 
 // public class Exp2_3_4 {
 //     public static void main(String[] args) {
