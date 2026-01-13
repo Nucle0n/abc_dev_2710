@@ -25,7 +25,7 @@ public class tri_a_bulle
         tri_a_bulle.afficherTableau(monTab);
         tri_a_bulle.triABulle(monTab);
         System.out.print("\nTableau trié :");
-        Exp2_3_4.afficherTableau(monTab);
+        tri_a_bulle.afficherTableau(monTab);
 
         sc.close();
     }
