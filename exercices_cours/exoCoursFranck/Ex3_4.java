@@ -70,7 +70,7 @@ public class Ex3_4
         {
             System.out.println("Veuillez saisir une phrase terminée par un point !");
             chaineString    = sc.nextLine();
-            chaineString = chaineString.trim();
+            chaineString    = chaineString.trim();
             depart          = chaineString.length()-1;
             souString       = chaineString.substring(depart, chaineString.length());
 
@@ -101,7 +101,7 @@ public class Ex3_4
 
             char[]  tabPhrase = new char[chaineString.length()];
 
-            for (int i = 0; i < chaineString.length(); i++) 
+            for (int i = 0; i < chaineString.length(); i++)
             {
                 tabPhrase[i] = chaineString.charAt(i);
             }

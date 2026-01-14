@@ -5,7 +5,7 @@
 
 package exocoursfranck;
 import java.util.Scanner;
-public class Ex3_2 
+public class Ex3_2
 {
     public static void main(String[] args) {
         //var

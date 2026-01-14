@@ -43,7 +43,7 @@ public class Ex3_4a
             if (car == inUser.charAt(i))//dans le cas ou le caractère recherche (contenu dans car) correspond au caractère présent à l'indice i de la chaîne inUser
                 carCount += 1; //on ajoute 1 au compteur
         }
-        System.out.println("Le caractère "+car+" apparait "+carCount+" dans la chaîne."); //On affiche le résultat, combien de fois le caractère apparraît dans la chaine
+        System.out.println("Le caractère "+car+" apparait "+carCount+" fois dans la chaîne."); //On affiche le résultat, combien de fois le caractère apparraît dans la chaine
 
         sc.close();
 

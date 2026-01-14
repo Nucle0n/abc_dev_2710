@@ -71,7 +71,7 @@ public class ZoneDeJeuDamier {
             playerName = "Joueur";
         }
 
-        // pas de close ici si plus tard tu veux réutiliser System.in
+        // pas de close ici si plus tard on veut réutiliser System.in
     }
 
     static void waitForEnter() {

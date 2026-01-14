@@ -84,6 +84,15 @@ public class Exp2_3_4{
             for (int element : _tableau){
                 System.out.print(element+" ");
             }
+        System.out.print("\n");
+    }
+
+    public static void afficherTableau (char[] _tableau)
+    {
+        System.out.print("\n");
+            for (char element : _tableau){
+                System.out.print(element+" ");
+            }
     }
 }
 
