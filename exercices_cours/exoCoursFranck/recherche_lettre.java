@@ -81,17 +81,24 @@ public class recherche_lettre {
 
         recherche_lettre.triaBulle2Dim(alaphOccurence);
         
-        // Afficher le résultat avec retour à la ligne
-        for (i = 0; i < tabOccurences.length; i++) {
-            if (tabOccurences[i] !=0) {
-                System.err.println(alphabet[i] + " : " + tabOccurences[i]);
-            }
+        // // Afficher le résultat avec retour à la ligne
+        // for (i = 0; i < tabOccurences.length; i++) {
+        //     if (tabOccurences[i] !=0) {
+        //         System.err.println(alphabet[i] + " : " + tabOccurences[i]);
+        //     }
+        // }
+
+        // Afficher le résultat trié dans l'ordre croissant, avec retour à la ligne
+        for (String[] soustableau : alaphOccurence) {
+            if (Integer.parseInt(soustableau[1]) != 0)
+            System.out.println(soustableau[0] + " : " + soustableau[1]);
+
         }
     }
         // Fonction tri à bulle d'un tableau à 2 dimensions
         public static void triaBulle2Dim(String[][] _tableau2Dim) {
 
-        String tempColAlpha,
+        String  tempColAlpha,
                 tempColFreq;
 
         int passage = 0;
