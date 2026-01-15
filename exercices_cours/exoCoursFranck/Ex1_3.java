@@ -1,6 +1,6 @@
 package exocoursfranck;
 import java.util.Scanner;
-public class Ex1_3 
+public class Ex1_3
 {
     public static void main(String[] args)
     {
