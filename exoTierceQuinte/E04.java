@@ -14,25 +14,26 @@ public class E04 {
         String dbool;
         Scanner sc = new Scanner(System.in);
         
-        while (true){
-        System.out.print("Mode debug (Y/N) : ");
-        dbool = sc.nextLine().toLowerCase();
-            while (!dbool.equals("n") || !dbool.equals("y")) {
-            System.out.println("Erreur de saisie, répondez par Y ou N");
-            }
-        sc.next();
-        }
+        while (true) {
+            System.out.print("Mode debug (y/n) : ");
+            dbool = sc.nextLine().trim().toLowerCase(); // .trim() pour enlever les espaces, .toLowerCase() pour mettre en minuscule
 
-        if (dbool.equals("y")){
-            debug = true;
-            System.out.println("Debug mode [ON]");
-        }
-        if (dbool.equals("n")){
-            debug = false;
-            System.out.println("Debug mode [OFF]");
+            if (dbool.equals("y")) {
+                debug = true;
+                System.out.println("Debug mode [ON]");
+                break;
+            }
+
+            if (dbool.equals("n")) {
+                debug = false;
+                System.out.println("Debug mode [OFF]");
+                break;
+            }
+
+            System.out.println("Erreur de saisie, répondez par y ou n");
         }
         
-        System.out.print("Entrez un nombre : " );
+        System.out.print("Entrez un nombre : ");
         nbUser = sc.nextInt();
 
         for (int i = 1; i <= nbUser; i++) {
