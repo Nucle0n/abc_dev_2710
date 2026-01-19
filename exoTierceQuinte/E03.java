@@ -19,7 +19,7 @@ public class E03 {
 
         for (int i = initFor; i < initFor+10; i++) {
             System.out.println(nbUser+1);
-            nbUser++;         
+            nbUser++;
         }
 
         sc.close();

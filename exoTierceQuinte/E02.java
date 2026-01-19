@@ -15,7 +15,7 @@ public class E02 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Entrez un nombre entre 10 et 20 : ");
-       
+        
         do {
             // sc.next();
             nbUser = sc.nextInt();

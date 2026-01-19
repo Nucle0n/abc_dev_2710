@@ -24,36 +24,37 @@ public class E09 {
         
         Scanner sc = new Scanner(System.in);
         
-        int n; // nombre de chevaux partants
-        int p; // nombre de chevaux joués
-        long x; // chances de gagner dans l'ordre
+        int chevaux; // nombre de chevaux partants
+        int njChevaux; // nombre de chevaux joués
         
-        long y; // chances de gagner dans le désordre
-        long factN = 1;
-        long factP = 1;
-        long factNMinusP = 1;
+        long ordre; // chances de gagner dans l'ordre
+        long desordre; // chances de gagner dans le désordre
+
+        long factChevaux = 1;
+        long factNJChevaux = 1;
+        long factDiff = 1;
         
         System.out.print("Entrez le nombre de chevaux partants : ");
-        n = sc.nextInt();
+        chevaux = sc.nextInt();
         
         System.out.print("Entrez le nombre de chevaux joués : ");
-        p = sc.nextInt();
+        njChevaux = sc.nextInt();
         
-        for (int i = 1; i <= n; i++) {
-            factN *= i;
-            if (i <= p) {
-                factP *= i;
+        for (int i = 1; i <= chevaux; i++) {
+            factChevaux = factChevaux * i;
+            if (i <= njChevaux) {
+                factNJChevaux = factNJChevaux * i;
             }
-            if (i <= n - p) {
-                factNMinusP *= i;
+            if (i <= chevaux - njChevaux) {
+                factDiff = factDiff * i;
             }
         }
 
-        x = factN / factNMinusP;
-        y = factN / (factP * factNMinusP);
+        ordre = factChevaux / factDiff;
+        desordre = factChevaux / (factNJChevaux * factDiff);
 
-        System.out.printf("Dans l'ordre : une chance sur %d de gagner%n", x);
-        System.out.printf("Dans le désordre : une chance sur %d de gagner%n", y);
+        System.out.printf("Dans l'ordre : une chance sur %d de gagner%n", ordre);
+        System.out.printf("Dans le désordre : une chance sur %d de gagner%n", desordre);
         
         sc.close();
 
