@@ -26,9 +26,11 @@ public class E09 {
         
         int chevaux; // nombre de chevaux partants (n)
         int njChevaux; // nombre de chevaux joués (p)
-        int list;
 
-        String choix = "xx";
+        String choix = "";
+        String choixOrdre = " ";
+
+        boolean ordreTF;
         
         long ordre; // chances de gagner dans l'ordre (x)
         long desordre; // chances de gagner dans le désordre (y)
@@ -54,8 +56,13 @@ public class E09 {
             case 5:
                     choix = "quinté";
                 break;
-            // default:
-            //     throw new AssertionError();
+            default:
+            throw new AssertionError();
+        }
+
+        while (!choixOrdre.equalsIgnoreCase("o" || !choixOrdre.equalsIgnoreCase("n"))){
+        System.out.printf("Voulez vous le %s dans l'ordre ? (O/N) : ",choix);
+        choixOrdre = sc.nextLine().trim().toLowerCase();
         }
 
         for (int i = 1; i <= chevaux; i++) {
