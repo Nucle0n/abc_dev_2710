@@ -24,11 +24,11 @@ public class E09 {
         
         Scanner sc = new Scanner(System.in);
         
-        int chevaux; // nombre de chevaux partants
-        int njChevaux; // nombre de chevaux joués
+        int chevaux; // nombre de chevaux partants (n)
+        int njChevaux; // nombre de chevaux joués (p)
         
-        long ordre; // chances de gagner dans l'ordre
-        long desordre; // chances de gagner dans le désordre
+        long ordre; // chances de gagner dans l'ordre (x)
+        long desordre; // chances de gagner dans le désordre (y)
 
         long factChevaux = 1;
         long factNJChevaux = 1;
