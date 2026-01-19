@@ -49,13 +49,14 @@ public class E09c {
                     res = E09c.nbCombinaison(5, nbChevaux);
                     System.out.println("Dans le désordre, vous avez 1 chance de gagner sur : "+ res);
                 }
+                break;
             default:
-                // throw new AssertionError();
+                throw new AssertionError();
         }
 
         // res = E09c.factorielleClassique(nbfactorielle);
         // res = E09c.factorielleClassique2(nbfactorielle);
-        // res = E09c.factorielleCyclique(nbChevaux);
+        // res = E09c.factorielleRecursive(nbChevaux);
 
         // System.out.println("Resultat de : "+nbChevaux+" est : "+res);
 
@@ -80,10 +81,10 @@ public class E09c {
 
     }
 
-    public static long factorielleCyclique(long _nb){
+    public static long factorielleRecursive(long _nb){
         if (_nb > 1) {
             // System.out.println(_nb);
-            return (_nb * factorielleCyclique(_nb-1));
+            return (_nb * factorielleRecursive(_nb-1));
 
         } else {
             return 1;
@@ -91,11 +92,11 @@ public class E09c {
     }
 
     public static long nbArrangement(int _nbChevauxJouer, long _nbChevauxPartant){
-        return factorielleCyclique(_nbChevauxPartant)/factorielleCyclique(_nbChevauxPartant-(long)_nbChevauxJouer);
+        return factorielleRecursive(_nbChevauxPartant)/factorielleRecursive(_nbChevauxPartant-(long)_nbChevauxJouer);
     }
 
     public static long nbCombinaison(int _nbChevauxJouer, long _nbChevauxPartant)  {
-        long resultat = factorielleCyclique(_nbChevauxPartant)/(factorielleCyclique(_nbChevauxJouer)*factorielleCyclique((_nbChevauxPartant -(long)_nbChevauxJouer)));
+        long resultat = factorielleRecursive(_nbChevauxPartant)/(factorielleRecursive(_nbChevauxJouer)*factorielleRecursive((_nbChevauxPartant -(long)_nbChevauxJouer)));
     
         return resultat;
     }

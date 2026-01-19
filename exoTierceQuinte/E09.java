@@ -26,6 +26,9 @@ public class E09 {
         
         int chevaux; // nombre de chevaux partants (n)
         int njChevaux; // nombre de chevaux joués (p)
+        int list;
+
+        String choix = "xx";
         
         long ordre; // chances de gagner dans l'ordre (x)
         long desordre; // chances de gagner dans le désordre (y)
@@ -37,9 +40,24 @@ public class E09 {
         System.out.print("Entrez le nombre de chevaux partants : ");
         chevaux = sc.nextInt();
         
-        System.out.print("Entrez le nombre de chevaux joués : ");
+        // System.out.print("Entrez le nombre de chevaux joués : ");
+        System.out.printf("Choisissez :%n\033[1;4m3\033[0m - Tiercé%n\033[1;4m4\033[0m - Quarté%n\033[1;4m5\033[0m - Quinté%n%n");
         njChevaux = sc.nextInt();
         
+        switch (njChevaux) {
+            case 3:
+                choix = "tiercé";
+                break;
+            case 4:
+                    choix = "quarté";
+                break;
+            case 5:
+                    choix = "quinté";
+                break;
+            // default:
+            //     throw new AssertionError();
+        }
+
         for (int i = 1; i <= chevaux; i++) {
             factChevaux = factChevaux * i;
             if (i <= njChevaux) {
@@ -53,8 +71,8 @@ public class E09 {
         ordre = factChevaux / factDiff;
         desordre = factChevaux / (factNJChevaux * factDiff);
 
-        System.out.printf("Dans l'ordre : une chance sur %d de gagner%n", ordre);
-        System.out.printf("Dans le désordre : une chance sur %d de gagner%n", desordre);
+        System.out.printf("%nPour le %s dans l'ordre : une chance sur %d de gagner%n",choix, ordre);
+        System.out.printf("Pour le %s dans le désordre : une chance sur %d de gagner%n%n",choix, desordre);
         
         sc.close();
 
