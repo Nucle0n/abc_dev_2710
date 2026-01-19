@@ -10,16 +10,14 @@ import java.util.Scanner;
 public class E03 {
     public static void main(String[] args) {
         int nbUser;
-        int initFor;
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Entrez un nombre : ");
         nbUser = sc.nextInt();
-        initFor = nbUser;
 
-        for (int i = initFor; i < initFor+10; i++) {
-            System.out.println(nbUser+1);
-            nbUser++;
+        for (int i = nbUser + 1; i <= nbUser +10 ; i++) {
+            System.out.println(i);
+            
         }
 
         sc.close();

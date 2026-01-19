@@ -14,23 +14,20 @@ public class E02 {
         int nbUser;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Entrez un nombre entre 10 et 20 : ");
-        
         do {
-            // sc.next();
+            System.out.print("Entrez un nombre entre 10 et 20 : ");
             nbUser = sc.nextInt();
 
             if (nbUser > 20){
-                System.out.print("Plus petit ! : ");
+                System.out.println("Plus petit !");
             }
-            if (nbUser < 10){
-                System.out.print("Plus grand ! : ");
+            else if (nbUser < 10){
+                System.out.println("Plus grand !");
             }
         }
         while (nbUser < 10 || nbUser > 20);
 
-        System.out.printf("Le nombre entré est : %d",nbUser);
-
+        System.out.printf("Le nombre entré est : %d%n",nbUser);
 
         sc.close();
     }
