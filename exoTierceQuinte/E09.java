@@ -28,7 +28,7 @@ public class E09 {
         int njChevaux       = 0;        // nombre de chevaux joués (p)
 
         String choix        = "";
-        String choixOrdre   = " ";
+        String choixOrdre;
 
         boolean ordreTF     = false;
         
