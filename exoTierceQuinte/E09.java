@@ -34,10 +34,6 @@ public class E09 {
         
         long ordre;                     // chances de gagner dans l'ordre (x)
         long desordre;                  // chances de gagner dans le désordre (y)
-
-        long factChevaux    = 1;
-        long factNJChevaux  = 1;
-        long factDiff       = 1;
         
         System.out.println("\nCombien de chevaux sur la ligne de départ ?");
         do  {
@@ -81,19 +77,35 @@ public class E09 {
                 break;
             }
         }
+        // n -> chevaux
+        // p -> njChevaux
+        // X -> ordre = n ! / (n - p) !
+        // Y -> desordre = n ! / (p ! * (n – p) !)
 
-        for (int i = 1; i <= chevaux; i++) {
-            factChevaux = factChevaux * i;
-            if (i <= njChevaux) {
-                factNJChevaux = factNJChevaux * i;
-            }
-            if (i <= chevaux - njChevaux) {
-                factDiff = factDiff * i;
-            }
-        }
+        // ordre = factorielle(chevaux) / factorielle(chevaux - njChevaux);
+        ordre = factorielleRecursive(chevaux) / factorielleRecursive(chevaux - njChevaux);
 
-        ordre = factChevaux / factDiff;
-        desordre = factChevaux / (factNJChevaux * factDiff);
+        //desordre = factorielle(chevaux) / (factorielle(njChevaux) * factorielle(chevaux - njChevaux));
+        desordre = factorielleRecursive(chevaux) / (factorielleRecursive(njChevaux) * factorielleRecursive(chevaux - njChevaux));
+
+        
+
+        // long factChevaux    = 1;
+        // long factNJChevaux  = 1;
+        // long factDiff       = 1;
+
+        // for (int i = 1; i <= chevaux; i++) {
+        //     factChevaux = factChevaux * i;
+        //     if (i <= njChevaux) {
+        //         factNJChevaux = factNJChevaux * i;
+        //     }
+        //     if (i <= chevaux - njChevaux) {
+        //         factDiff = factDiff * i;
+        //     }
+        // }
+
+        // ordre = factChevaux / factDiff;
+        // desordre = factChevaux / (factNJChevaux * factDiff);
 
         if (ordreTF) {
             System.out.printf("%nPour le\033[33m %s\033[0m dans l'ordre :%nVous avez\033[33m 1/%d\033[0m chance de gagner.%n%n",choix, ordre);
@@ -105,4 +117,26 @@ public class E09 {
         sc.close();
 
     }
+
+    // Fonction : factorielle
+    public static long factorielle (long _nb){
+        long temp = _nb;
+        
+        for (int i = 1; i < temp; i++) {
+            _nb = _nb*i;
+        }
+        return _nb;
+        
+    }
+
+    // Fonction : Factorielle récursive
+    public static long factorielleRecursive (long _nb){
+        if (_nb > 1){
+            return (_nb * factorielleRecursive(_nb-1));
+        }
+        else{
+            return 1;
+        }
+    }
+
 }
