@@ -24,41 +24,45 @@ public class E09 {
         
         Scanner sc = new Scanner(System.in);
         
-        int chevaux; // nombre de chevaux partants (n)
-        int njChevaux; // nombre de chevaux joués (p)
+        int chevaux         = 1;        // nombre de chevaux partants (n)
+        int njChevaux       = 0;        // nombre de chevaux joués (p)
 
-        String choix = "";
-        String choixOrdre = " ";
+        String choix        = "";
+        String choixOrdre   = " ";
 
-        boolean ordreTF = false;
+        boolean ordreTF     = false;
         
-        long ordre; // chances de gagner dans l'ordre (x)
-        long desordre; // chances de gagner dans le désordre (y)
+        long ordre;                     // chances de gagner dans l'ordre (x)
+        long desordre;                  // chances de gagner dans le désordre (y)
 
-        long factChevaux = 1;
-        long factNJChevaux = 1;
-        long factDiff = 1;
+        long factChevaux    = 1;
+        long factNJChevaux  = 1;
+        long factDiff       = 1;
         
-        System.out.print("Entrez le nombre de chevaux partants : ");
-        chevaux = sc.nextInt();
-        
-        // System.out.print("Entrez le nombre de chevaux joués : ");
-        System.out.printf("%nChoisissez :%n\033[1;4m\t\t3\033[0m - Tiercé%n\033[1;4m\t\t4\033[0m - Quarté%n\033[1;4m\t\t5\033[0m - Quinté%n%n");
-        njChevaux = sc.nextInt();
-        
-        switch (njChevaux) {
-            case 3:
-                choix = "tiercé";
-                break;
-            case 4:
-                    choix = "quarté";
-                break;
-            case 5:
-                    choix = "quinté";
-                break;
-            default:
-            System.out.println("Saisir 3, 4 ou 5");
+        System.out.println("\nCombien de chevaux sur la ligne de départ ?");
+        do  {
+            System.out.print("Choisisez un nombre entre 12 et 20 : ");
+            chevaux = sc.nextInt();
         }
+        while (chevaux < 10 || chevaux > 20);
+        
+        System.out.printf("%nChoisissez :%n\033[1;4m\t\t3\033[0m - Tiercé%n\033[1;4m\t\t4\033[0m - Quarté%n\033[1;4m\t\t5\033[0m - Quinté%n%n");
+        do {
+            njChevaux = sc.nextInt();
+            switch (njChevaux) {
+                case 3:
+                    choix = "tiercé";
+                    break;
+                case 4:
+                    choix = "quarté";
+                    break;
+                case 5:
+                    choix = "quinté";
+                    break;
+                default:
+                System.out.print("Saisir 3, 4 ou 5 : ");
+            }
+        } while (njChevaux != 3 && njChevaux != 4 & njChevaux != 5);
 
         System.out.printf("%nVoulez vous le\033[33m %s\033[0m dans l'ordre ? ",choix);
         sc.nextLine();
