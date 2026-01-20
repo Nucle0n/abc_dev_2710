@@ -58,12 +58,12 @@ public class E09 {
                 default:
                 System.out.print("Saisir 3, 4 ou 5 : ");
             }
-        } while (njChevaux != 3 && njChevaux != 4 & njChevaux != 5);
+        } while (njChevaux != 3 && njChevaux != 4 && njChevaux != 5);
 
         System.out.printf("%nVoulez vous le\033[33m %s\033[0m dans l'ordre ? ",choix);
         sc.nextLine();
 
-        while (!choixOrdre.equalsIgnoreCase("o") || !choixOrdre.equalsIgnoreCase("n") || !choixOrdre.equalsIgnoreCase("oui") || !choixOrdre.equalsIgnoreCase("non")){
+        while (true){
             System.out.printf("Répondez par \033[1;4mO\033[0mui ou \033[1;4mN\033[0mon (O/N) : ",choix);
             
             choixOrdre = sc.nextLine().trim().toLowerCase();
