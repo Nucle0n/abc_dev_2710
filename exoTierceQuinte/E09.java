@@ -60,7 +60,7 @@ public class E09 {
             System.out.println("Saisir 3, 4 ou 5");
         }
 
-        System.out.printf("%nVoulez vous le %s dans l'ordre ? ",choix);
+        System.out.printf("%nVoulez vous le\033[33m %s\033[0m dans l'ordre ? ",choix);
         sc.nextLine();
 
         while (!choixOrdre.equalsIgnoreCase("o") || !choixOrdre.equalsIgnoreCase("n") || !choixOrdre.equalsIgnoreCase("oui") || !choixOrdre.equalsIgnoreCase("non")){
